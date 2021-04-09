@@ -1,22 +1,30 @@
-#include <iostream>
-#include <vector>
+#include<iostream>
+#include<algorithm>
 using namespace std;
-struct stt {
-	int a1, a2, a3;
-};
-int main() {
-	cin.tie(NULL); cout.tie(NULL); ios_base::sync_with_stdio(0);
-	int N; cin >> N; vector <stt> dp(N + 1, { 0, });
-	for (int i = 1; i <= 3; i++) cin >> dp[i].a1 >> dp[i].a2 >> dp[i].a3;
-	for (int i = 2; i <= N; i++) {
-		if (i == N) {
-			
+int d[1001][3];
+int rgb[1001][3];
+int main(void)
+{
+	int n;
+	cin >> n;
+	for (int i = 1; i <= n; i++)
+		for (int j = 0; j < 3; j++)
+			cin >> rgb[i][j];
+	int ans = 1000001;
+	for (int k = 0; k <= 2; k++) {
+		for (int i = 0; i <= 2; i++) {
+			if (i == k) d[1][i] = rgb[1][i]; 
+			else d[1][i] = 10000001;
 		}
-		else {
-			dp[i].a1 = min(dp[i - 1].a2, dp[i - 1].a3);
-			dp[i].a2 = min(dp[i - 1].a1, dp[i - 1].a3);
-			dp[i].a3 = min(dp[i - 1].a1, dp[i - 1].a2);
+		for (int i = 2; i <= n; i++) {
+			d[i][0] = min(d[i - 1][1], d[i - 1][2]) + rgb[i][0];
+			d[i][1] = min(d[i - 1][0], d[i - 1][2]) + rgb[i][1];
+			d[i][2] = min(d[i - 1][0], d[i - 1][1]) + rgb[i][2];
+		}
+		for (int i = 0; i <= 2; i++) {
+			if (i == k) continue; 
+			ans = min(ans, d[n][i]);
 		}
 	}
-
+	cout << ans;
 }
