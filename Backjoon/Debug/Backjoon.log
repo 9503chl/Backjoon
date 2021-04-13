@@ -1,2 +1,5 @@
-﻿  1476 날짜 계산.cpp
+﻿  1107 리모컨.cpp
+C:\Users\최씨컴\source\repos\Backjoon\Backjoon\1107 리모컨.cpp(12,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\최씨컴\source\repos\Backjoon\Backjoon\1107 리모컨.cpp(13,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\최씨컴\source\repos\Backjoon\Backjoon\1107 리모컨.cpp(34,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   Backjoon.vcxproj -> C:\Users\최씨컴\source\repos\Backjoon\Debug\Backjoon.exe
