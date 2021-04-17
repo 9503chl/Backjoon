@@ -1,37 +1,41 @@
 #include <iostream>
 #include <vector>
-#include <string>
-#include <stdlib.h>
+#include <math.h>
 using namespace std;
-int min1 = 0, cnt = 0;
-string N; vector <int> but;
-string rst;
+
+int N , M; vector <int> but (10, true);
+int min1 = 0, length = 0, cnt = 0, rst = 0, cntB = 0;
 void check(int a) {
-	min1 = abs(a - but[0] - 48); 
-	int index = 0;
-	for (int i = 1; i < but.size(); i++) min1 = min(min1, abs(a - but[i] - 48)); 
-	for (int i = 0; i < but.size(); i++) {
-		if (min1 == abs(a - but[i] - 48)) {
-			index = but[i]; break;
+	a %= 10;
+	for (int i = 0; i < 10; i++)
+		if (but[i] == true) {
+			min1 = abs(a - i); break; //시작점 찾기
+		}
+	for (int i = 0; i < 10; i++) 
+		if (but[i] == true) min1 = min(min1, abs(a - i)); //비교
+	for (int i = 0; i < 10; i++) {
+		if (abs(a - i) == min1 && but[i] == true) {
+			cnt = i; break; //인덱스찾기
 		}
 	}
-	rst.push_back(index + '0'); cnt++;
+	cntB++; //이것도 버튼누르는거
 }
 int main()
 {
 	cin.tie(NULL); cout.tie(NULL); ios_base::sync_with_stdio(0);
-	vector <bool> ex(10, true); int M; 
 	cin >> N >> M; 
-	for (int i = 0; i < M; i++) {
+	for (int i = 0; i < M; i++) { //버튼 지우기
 		int num; cin >> num;
-		ex[num] = false;
+		but[num] = false;
 	}
-	if (N == "100") cout << 0;
-	else if (M == 10) cout << stoi(N) - 100;
-	else{
-		for (int i = 0; i < 10; i++)
-			if (ex[i] == true) but.push_back(i);
-		for (int i = 0; i < size(N); i++) check(N[i]);
-		cout << min(abs(stoi(N) - stoi(rst)) + cnt,stoi(N)-100);
+	int x = N;
+	while (x / 10) {
+		x /= 10;
+		length += 1;
 	}
+	for (int i = length; i >= 0; i--) {
+		check(N / pow(10, i));
+		rst += (cnt * pow(10, i));
+	}
+	cout << min(abs(N - rst) + cntB, abs(N - 100));
 }
