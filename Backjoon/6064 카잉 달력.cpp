@@ -25,7 +25,7 @@ int main()
 			cnt.push_back(a);
 			a += N;
 		}
-		while (b < total) {
+		while (b < total) { //빠르다 생각했는데 시간초과가난다 왜지..
 			for (int i = 0; i < size(cnt); i++) {
 				if (cnt[i] == b) {
 					break1 = b;
