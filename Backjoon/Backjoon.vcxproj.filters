@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="6064 카잉 달력.cpp">
+    <ClCompile Include="1748 수 이어 쓰기 1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
