@@ -2,7 +2,7 @@
 #include <vector>
 #include <math.h>
 using namespace std;
-//이방법말고 전부탐색하느 방법을 찾아보자
+//이방법말고 전부탐색하느 방법을 찾아보자 아직 몾찾았따
 int N, M; vector <int> but(10, true);
 int min1 = 0, length = 0, cnt = 0, rst = 0, cntB = 0;
 void check(int a) {
