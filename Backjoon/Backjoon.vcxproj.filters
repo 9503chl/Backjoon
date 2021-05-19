@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="15649 N과 M.cpp">
+    <ClCompile Include="6064 카잉달력.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
