@@ -4,18 +4,21 @@
 using namespace std;
 
 int Array[8], rst[8] = { 0, };
-bool yes[8] = { true, };
+bool yes[8] = { false, }; //false가 방문 안한것
 void Bt(int n, int m, int cnt) {
-	for (int i = 0; i < n; i++) { //자기자신일때 넘어간느데 안됨.
-		if (cnt < m && yes[i] == true) {
-			yes[i] = false;
-			rst[i] = Array[i];
-			Bt(n, m, cnt + 1);
-			yes[i] = true;
+	for (int i = 0; i < n; i++) { 
+		if (cnt < m) {
+			if (yes[i] == false) {
+				yes[i] = true;
+				rst[cnt] = Array[i];
+				Bt(n, m, cnt + 1);
+				yes[i] = false;
+			}
+			else continue;
 		}
 		else {
-			for (int i = 0; i < m; i++) cout << rst[i] << " ";
-			cout << "\n";
+			for (int j = 0; j < m; j++) cout << rst[j] << " ";
+			cout << "\n"; cnt--; rst[cnt] = 0; break;
 		}
 	}
 }
