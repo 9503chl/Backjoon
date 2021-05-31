@@ -1,4 +1,6 @@
-﻿  14889 스타트와 링크.cpp
-C:\Users\최씨컴\source\repos\Backjoon\Backjoon\14889 스타트와 링크.cpp(16,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\최씨컴\source\repos\Backjoon\Backjoon\14889 스타트와 링크.cpp(17,26): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+﻿  15661 링크와 스타트.cpp
+C:\Users\최씨컴\source\repos\Backjoon\Backjoon\15661 링크와 스타트.cpp(15,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\최씨컴\source\repos\Backjoon\Backjoon\15661 링크와 스타트.cpp(16,25): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\최씨컴\source\repos\Backjoon\Backjoon\15661 링크와 스타트.cpp(21,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\최씨컴\source\repos\Backjoon\Backjoon\15661 링크와 스타트.cpp(22,25): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   Backjoon.vcxproj -> C:\Users\최씨컴\source\repos\Backjoon\Debug\Backjoon.exe
