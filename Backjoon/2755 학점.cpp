@@ -5,8 +5,8 @@ using namespace std;
 
 int main() {
 	cin.tie(NULL); cout.tie(NULL); ios_base::sync_with_stdio(false);
-	double N,M=0; double rst = 0;
-	cin >> N;
+	double N; int M = 0; double rst = 0;
+	cin >> N; 
 	for (int i = 0; i < N; i++) {
 		string a; double num; string cnt; cin >> a >> num >> cnt;
 		M += num;
@@ -24,6 +24,7 @@ int main() {
 		else if (cnt == "D-") rst += num * 0.7;
 		else continue;
 	}
-	cout.precision(2);
-	cout <<fixed << rst / M;
+	rst = ceil(rst/M*100)/100;
+	cout.precision(3);
+	cout << rst;
 }
