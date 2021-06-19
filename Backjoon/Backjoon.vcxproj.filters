@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="15680 연세대학교.cpp">
+    <ClCompile Include="10768 특별한 날.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
