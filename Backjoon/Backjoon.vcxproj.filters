@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="13136 cctv.cpp">
+    <ClCompile Include="13866 팀 나누기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
