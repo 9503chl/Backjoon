@@ -1,2 +1,3 @@
-﻿  124 나라의 숫자.cpp
+﻿  짝지어 제거하기.cpp
+C:\Users\최씨컴\source\repos\Backjoon\Backjoon\짝지어 제거하기.cpp(12,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   Backjoon.vcxproj -> C:\Users\최씨컴\source\repos\Backjoon\Debug\Backjoon.exe
