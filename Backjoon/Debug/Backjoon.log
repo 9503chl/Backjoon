@@ -1,2 +1,6 @@
-﻿  오픈채팅방.cpp
+﻿  기능개발.cpp
+C:\Users\최씨컴\source\repos\Backjoon\Backjoon\기능개발.cpp(9,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\최씨컴\source\repos\Backjoon\Backjoon\기능개발.cpp(10,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\최씨컴\source\repos\Backjoon\Backjoon\기능개발.cpp(11,38): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+C:\Users\최씨컴\source\repos\Backjoon\Backjoon\기능개발.cpp(7,30): warning C4101: 'yes' :참조되지 않은 지역 변수입니다.
   Backjoon.vcxproj -> C:\Users\최씨컴\source\repos\Backjoon\Debug\Backjoon.exe
